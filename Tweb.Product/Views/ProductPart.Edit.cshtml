@@ -1,0 +1,11 @@
+@model ProductPartViewModel
+
+<fieldset class="form-group" asp-validation-class-for="SKU">
+    <label asp-for="Sku">@T["SKU"] <span asp-validation-for="Sku"></span></label>
+    <input asp-for="Sku" class="form-control" />
+</fieldset>
+
+<fieldset class="form-group" asp-validation-class-for="UnitPrice">
+    <label asp-for="UnitPrice">@T["Price"] <span asp-validation-for="UnitPrice"></span></label>
+    <input asp-for="UnitPrice" class="form-control" />
+</fieldset>
